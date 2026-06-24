@@ -1,5 +1,5 @@
 import streamlit as st
-from data_loader import load_datal
+from data_loader import load_data
 import datetime
 
 st.set_page_config(page_title="Corpicia - Resumen Ejecutivo", page_icon="🌱", layout="wide")
@@ -132,14 +132,14 @@ st.markdown("### 📊 Estado del Negocio")
 
 col1, col2 = st.columns(2)
 with col1:
-        st.markdown(f"""
+            st.markdown(f"""
             <div class="kpi-card">
                     <div class="kpi-label">👥 Contactos Recibidos</div>
                             <div class="kpi-value">{total_contactos}</div>
                                 </div>
                                     """, unsafe_allow_html=True)
 
-        st.markdown(f"""
+            st.markdown(f"""
         <div class="kpi-card">
                 <div class="kpi-label">💰 Dinero Generado</div>
                         <div class="kpi-value">₲ {dinero_cerrado:,.0f}</div>
@@ -147,14 +147,14 @@ with col1:
                                 """, unsafe_allow_html=True)
 
 with col2:
-        st.markdown(f"""
+            st.markdown(f"""
             <div class="kpi-card">
                     <div class="kpi-label">✅ Ventas Cerradas</div>
                             <div class="kpi-value">{ventas_cerradas}</div>
                                 </div>
                                     """, unsafe_allow_html=True)
 
-        st.markdown(f"""
+            st.markdown(f"""
         <div class="kpi-card">
                 <div class="kpi-label">⏳ Dinero Pendiente</div>
                         <div class="kpi-value warning">₲ {dinero_pendiente:,.0f}</div>
