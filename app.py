@@ -1,5 +1,5 @@
 import streamlit as st
-from data_loader import load_data
+from data_loader import load_datal
 import datetime
 
 st.set_page_config(page_title="Corpicia - Resumen Ejecutivo", page_icon="🌱", layout="wide")
