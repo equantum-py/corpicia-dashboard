@@ -1,4 +1,4 @@
-himport streamlit as st
+import streamlit as st
 from data_loader import load_data
 import datetime
 
