@@ -1,4 +1,4 @@
-import streamlit as st
+himport streamlit as st
 from data_loader import load_data
 import datetime
 
@@ -139,7 +139,7 @@ with col1:
                                 </div>
                                     """, unsafe_allow_html=True)
 
-    with col2:
+with  col2:
 
                 st.markdown(f"""
             <div class="kpi-card">
