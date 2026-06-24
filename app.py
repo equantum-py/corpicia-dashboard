@@ -139,15 +139,16 @@ with col1:
                                 </div>
                                     """, unsafe_allow_html=True)
 
-            st.markdown(f"""
-        <div class="kpi-card">
-                <div class="kpi-label">💰 Dinero Generado</div>
-                        <div class="kpi-value">₲ {dinero_cerrado:,.0f}</div>
-                            </div>
-                                """, unsafe_allow_html=True)
+    with col2:
 
-with col2:
-            st.markdown(f"""
+                st.markdown(f"""
+            <div class="kpi-card">
+                    <div class="kpi-label">💰 Dinero Generado</div>
+                            <div class="kpi-value">₲ {dinero_cerrado:,.0f}</div>
+                                </div>
+                                    """, unsafe_allow_html=True)
+
+        st.markdown(f"""
             <div class="kpi-card">
                     <div class="kpi-label">✅ Ventas Cerradas</div>
                             <div class="kpi-value">{ventas_cerradas}</div>
